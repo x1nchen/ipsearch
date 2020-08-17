@@ -15,7 +15,7 @@ import (
 
 const (
 	// IpipAPIURL is the ipip api url
-	IpipAPIURL = "http://freeapi.ipip.net/"
+	IpipAPIURL = "https://freeapi.ipip.net/"
 )
 
 func main() {

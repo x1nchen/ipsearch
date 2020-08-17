@@ -6,19 +6,6 @@ import (
 	"testing"
 )
 
-func Test_main(t *testing.T) {
-	tests := []struct {
-		name string
-	}{
-	// TODO: Add test cases.
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			main()
-		})
-	}
-}
-
 func Test_formatResData(t *testing.T) {
 	type args struct {
 		src string
@@ -125,7 +112,7 @@ func Test_parseInputToTargetIPS(t *testing.T) {
 		want    []string
 		wantErr bool
 	}{
-	// TODO
+		// TODO
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -194,19 +181,11 @@ func Test_requestAPI(t *testing.T) {
 		name string
 		args args
 	}{
-	// TODO: Add test cases.
+		{name: "118.28.8.8", args: args{ip: "118.28.8.8"}},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			requestAPI(tt.args.ip)
 		})
-	}
-}
-
-func Test_converStringToByteArray(t *testing.T) {
-	real := []byte("8888")
-	expect := []byte{'8', '8', '8', '8'}
-	if !reflect.DeepEqual(real, expect) {
-		t.Errorf("real = %v, expect %v", real, expect)
 	}
 }
